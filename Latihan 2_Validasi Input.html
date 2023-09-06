@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Praktikum SIG WEB Minggu ke-3</title>
+        <meta charset="utf-8">
+    </head>
+
+<h1>VALIDASI INPUT</h1>
+    <p>Masukkan nama, password, serta alamat email Anda : </p>
+    Nama     : <input type="text" id="nama" style="margin-left: 34px; margin-bottom: 10px;"> 
+    <br>
+    Password : <input type="password" id="pass" style="margin-left: 10px; margin-bottom: 10px"> 
+    <br>
+    E-mail: <input type="email" id="email" style="margin-left: 32px; margin-bottom: 10px"> 
+    <br>
+
+<button onclick="klik()">Check!</button>
+
+    <script>
+        function klik(){
+            var pw, check, txt;
+            var check = "Widiyani1705";
+            pw = document.getElementById("pass").value;
+
+            if (pw === check) {
+                txt = "Password benar!";
+                alert(txt);
+            }
+
+            else{
+                txt = "Password salah!";
+                alert(txt);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Praktikum SIG WEB Minggu ke-3</title>
+        <meta charset="utf-8">
+    </head>
+
+<body>
+    <h1>Hitung faktorial dari input</h1>
+        <h3>Masukkan sembarang angka</h3>
+
+        <div id="angkainput" style="float: left;">
+            <input type="text" id="angka">
+        </div>
+
+        <div id="tombol" style="float:left; margin-left: 10px;">
+            <button onclick="fact()"> PERIKSA! </button>
+        </div>
+        <br>
+
+        <p id="hasil"></p>
+
+        <script>
+            function fact(){
+                var i, num, f;
+                f = 1;
+                num = document.getElementById("angka").value;
+
+                for(i = 1; i <= num; i++) {
+                    f = f*i;
+                }
+                document.getElementById("hasil").innerHTML = "Angka faktorial dari " + num + " adalah : " + f ;
+            }
+        </script>
+
+</body>
+</html>
